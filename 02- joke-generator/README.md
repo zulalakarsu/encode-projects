@@ -39,3 +39,40 @@ Joke Evaluation:
 - Appropriateness: 9  
 - Originality: 8  
 - Alignment with requested tone: 9
+
+Installation instructions:
+
+1. Open terminal
+
+2. Create a new folder:
+
+mkdir my-projects
+cd my-projects
+
+3. Create a new NextJS project:
+
+npx create-next-app@latest ai-joke-app
+You can give any name to your project by replacing ai-joke-app with your preferred name
+Pick all the default options when prompted
+✔ Would you like to use TypeScript? … No / Yes
+✔ Would you like to use ESLint? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like to use src/ directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to customize the default import alias (@/*)? … No / Yes
+
+4. Navigate to the newly created project folder:
+
+cd ai-joke-app
+
+5. Install dependencies:
+npm install ai @ai-sdk/openai
+
+Note: Configure OPEN API KEY to a local envirnoment variable 
+
+6. Start the development server:
+
+npm run dev
+
+7. Open your browser and navigate to http://localhost:3000  
+
