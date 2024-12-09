@@ -1,0 +1,194 @@
+Team members:
+Team member #1 = Zulal Akarsu
+Team member #2 = Zalkifal 
+
+
+A. The experiment process & system prompts used in each script
+
+1. The first person uses one AI chef personality to suggest a dish based on given ingredients, then shares the response with a teammate.
+
+    **Team member #1:**
+    
+    Personality #1 was given as:
+    "a young Turkish chef with a passion of fusioning Turkish dishes with different cuisines"
+    
+    Ingredient inputs:
+    "potatoes,tomatoes,butter,garlic,beef"
+    
+    AI output: 
+    
+    "Here are some dish names you could create using potatoes, tomatoes, butter, garlic, and beef:
+    
+    Turkish İskender Kebab with Potato Purée
+    Garlic Butter Beef and Potato Skillet
+    Beef and Tomato Stew with Garlic Mashed Potatoes
+    Turkish Shepherd's Pie with Beef and Tomato Sauce
+    Beef and Potato Casserole with Garlic-Tomato Sauce"
+
+2. The second person requests a recipe for that dish using a different AI chef personality and shares the response with another teammate.
+
+   **Team member 2** (Italian chef)
+   
+   "**Recipe for Turkish İskender Kebab with Potato Purée**
+   
+   ### Ingredients
+   
+   #### For the İskender Kebab:
+   - 500g beef (ribeye or tenderloin), thinly sliced
+   - 2 tablespoons extra-virgin olive oil
+   - 2 tablespoons butter
+   - 1 medium onion, finely diced
+   - 3 cloves garlic, minced
+   - 2 large tomatoes (or 1 cup canned crushed tomatoes)
+   - 1 tablespoon tomato paste
+   - 1 teaspoon red pepper flakes (optional, for extra heat)
+   - Salt and freshly ground black pepper, to taste
+   - A splash of red wine (optional, for deglazing)
+   - 4 pieces of pita bread
+   
+   #### For the Potato Purée:
+   - 500g potatoes, peeled and cut into cubes
+   - 3 tablespoons butter
+   - 100ml milk, warmed (adjust to desired consistency)
+   - Salt and pepper to taste
+   - A sprinkle of grated Parmesan cheese (optional, for an Italian touch)
+   - A dash of nutmeg (optional)
+   
+   ### Instructions
+   
+   #### Preparing the İskender Kebab:
+   1. **Marinate the Beef**: Place the sliced beef in a bowl with a bit of salt, pepper, and a tablespoon of olive oil. Allow it to sit for about 20–30 minutes for the flavors to infuse.
+   2. **Cook the Beef**: In a skillet, heat the remaining olive oil and butter over medium-high heat. Add the marinated beef and cook until browned and tender (around 4–5 minutes). Remove the beef from the skillet and set it aside.
+   3. **Create the Sauce**: In the same skillet, add the chopped onion and cook until softened, about 5 minutes. Stir in the minced garlic and cook for another minute.
+   4. **Add Tomatoes and Wine**: Pour in the tomatoes, tomato paste, red pepper flakes, salt, and pepper. If using, add a splash of red wine to deglaze, scraping up any browned bits for added flavor. Let the sauce simmer for about 10 minutes, stirring occasionally until it thickens.
+   5. **Combine Beef with Sauce**: Add the cooked beef back into the skillet, stirring to coat in the sauce. Allow everything to meld together for a few more minutes, then remove from heat.
+   
+   #### Preparing the Potato Purée:
+   1. **Boil the Potatoes**: In a pot, cover the potatoes with water, add a pinch of salt, and bring to a boil. Cook until potatoes are tender (about 15-20 minutes), then drain well.
+   2. **Mash the Potatoes**: While the potatoes are still warm, mash them until smooth. Gradually add butter and warm milk, mixing until you achieve a creamy consistency. Season with salt, pepper, and a touch of nutmeg if desired. For an Italian twist, add a sprinkle of Parmesan cheese for extra richness.
+   
+   #### Assembling the Dish:
+   1. **Prepare the Pita Base**: Lightly toast the pita bread in a pan or oven until it’s slightly crisp.
+   2. **Serve**: Place the toasted pita on a serving plate. Spoon some potato purée over the bread, then layer with the beef and tomato sauce. Drizzle extra melted butter over the top if you like, and garnish with fresh herbs like parsley or basil.
+   
+   ### Tips from the Italian Chef:
+   - **For Extra Flavor**: Use fresh basil or oregano when cooking the sauce to add a Mediterranean depth.
+   - **Presentation**: Consider a light grating of Parmesan or a sprinkle of fresh herbs before serving for a more refined finish.
+   - **Serving Suggestions**: This dish pairs well with a side of lightly dressed greens or a slice of lemon to brighten the flavors.
+   
+   Enjoy creating this fusion-inspired take on the Turkish classic!"
+
+
+
+3. The third person critiques the recipe using a third AI chef personality.
+
+   **3rd personality (an experienced Indian chef who helps people by improvements on their recipes)**
+   
+   Note; input was shortened due to the errors in input limtiations 
+   Shortened unput: 
+   "Recipe for Turkish İskender Kebab with Potato Purée: For the İskender Kebab, you'll need 500g thinly sliced beef (ribeye or tenderloin), 2 tablespoons olive oil, 2 tablespoons butter, 1 diced onion, 3 minced garlic cloves, 2 large tomatoes (or 1 cup crushed tomatoes), 1 tablespoon tomato paste, 1 teaspoon red pepper flakes (optional), salt, pepper, a splash of red wine (optional), and 4 pita breads. For the Potato Purée, you'll need 500g potatoes (peeled and cubed), 3 tablespoons butter, 100ml warm milk, salt, pepper, and optional Parmesan or nutmeg. To prepare, marinate the beef with olive oil, salt, and pepper for 20–30 minutes, then cook until browned. Set aside, sauté the onion, garlic, tomatoes, tomato paste, and spices. Deglaze with wine if desired, simmer for 10 minutes, and return the beef to the skillet. For the purée, boil potatoes, mash with butter and warm milk, and season. To assemble, toast the pita, layer with potato purée, beef, and sauce, drizzle with melted butter, and garnish with herbs." 
+   
+   AI output: 
+   
+   "This recipe is well-organized, but here are a few suggestions for improvement:
+   1. **Marination:** Consider adding acid (like yogurt or lemon juice) to the beef marinade for additional tenderness and flavor depth.
+   2. **Sauce Texture:** Blend the tomato mixture for a smoother sauce consistency, which better complements the soft potato purée.
+   3. **Seasoning Layers:** Enhance the seasoning by adding herbs like oregano or thyme to the tomato sauce for a more aromatic profile.
+   4. **Potato Purée:** For a creamier texture, ensure the milk is gradually added while mashing the potatoes, and consider using a ricer for extra smoothness.
+   These adjustments should elevate the dish!"
+
+
+
+
+B. Comparative analysis of the different user prompts and their responses
+
+**Team member #1**
+
+**User inputs:**
+
+    **Personality #1 was given as:**
+    "a young Turkish chef with a passion of fusioning Turkish dishes with different cuisines"
+    
+    **Ingredient inputs:**
+    "potatoes,tomatoes,butter,garlic,beef"
+    
+    **Dish name input for the detailed recipe:**
+    "Turkish İskender Kebab with Potato Purée" 
+    
+    **Recipe input:**
+    "To prepare İskender Kebab, marinate sliced beef with salt, pepper, and olive oil, then cook it until browned but tender. Sauté onions and garlic, then simmer with tomatoes and spices for a flavorful sauce. Combine the beef with the sauce and heat through. For the base, boil and mash potatoes with butter, milk, and seasoning until smooth. Lightly toast pita bread, layer it on a plate with potato purée, and top with the beef and sauce mixture. Finish with a drizzle of melted butter and garnish with fresh herbs."
+    
+
+**AI outputs:**
+
+**Dish names**
+
+    "Here are some dish names you could create using potatoes, tomatoes, butter, garlic, and beef:
+    
+    Turkish İskender Kebab with Potato Purée
+    Garlic Butter Beef and Potato Skillet
+    Beef and Tomato Stew with Garlic Mashed Potatoes
+    Turkish Shepherd's Pie with Beef and Tomato Sauce
+    Beef and Potato Casserole with Garlic-Tomato Sauce"
+
+
+**Detailed recipe**
+
+    "Here's a detailed recipe for **Turkish İskender Kebab with Potato Purée**:
+    
+    ### Ingredients:
+    
+    #### For the İskender Kebab:
+    - 500g beef (ribeye or tenderloin), thinly sliced
+    - 2 tablespoons butter
+    - 2 tablespoons olive oil
+    - 1 onion, finely chopped
+    - 4 cloves garlic, minced
+    - 2 large tomatoes (or 1 can of crushed tomatoes)
+    - 1 tablespoon tomato paste
+    - 1 teaspoon red pepper flakes (optional)
+    - Salt and black pepper to taste
+    - 4 pieces of pita bread
+    
+    #### For the Potato Purée:
+    - 500g potatoes, peeled and cubed
+    - 50g butter
+    - 100ml milk (adjust for desired consistency)
+    - Salt to taste
+    - A pinch of nutmeg (optional)
+    
+    ### Instructions:
+    
+    #### Preparing the İskender Kebab:
+    1. **Marinate the Beef**: In a bowl, combine the sliced beef with salt, pepper, and a tablespoon of olive oil. Let it marinate for about 30 minutes. 
+    2. **Cook the Beef**: In a large skillet, heat the remaining olive oil and 1 tablespoon of butter over medium-high heat. Add the marinated beef, cooking until browned on all sides but still tender (about 3-4 minutes). Remove the beef from the skillet and set aside.
+    3. **Make the Sauce**: In the same skillet, add the chopped onion and sauté until translucent (about 5 minutes). Add minced garlic, cooking for an additional minute. Then stir in the crushed tomatoes, tomato paste, red pepper flakes (if using), salt, and pepper. Let the sauce simmer for about 10 minutes, stirring occasionally. Adjust seasoning as necessary.
+    4. **Combine the Beef with Sauce**: Add the beef back into the skillet, stirring to combine everything and allowing it to heat through for a few minutes.
+    
+    #### Preparing the Potato Purée:
+    1. **Boil the Potatoes**: In a pot, add the cubed potatoes and cover with cold water. Bring to a boil and cook until fork-tender (about 15-20 minutes). Drain well.
+    2. **Mash the Potatoes**: In a bowl, mash the potatoes until smooth. Add butter, milk, salt, and nutmeg (if using). Mix until you have a creamy consistency. Adjust milk according to your preferred consistency.
+    
+    #### Assembling the Dish:
+    1. **Toast the Pita**: Lightly toast the pita bread in a pan or oven until golden and slightly crisp.
+    2. **Serve**: On a plate, place the toasted pita bread as a base. Spoon some potato purée over the bread, then top with the beef and sauce mixture. Drizzle additional melted butter over the top if desired, and garnish with fresh herbs like parsley or mint.
+    
+    ### Tips:
+    - You can also serve this dish with a side of yogurt to balance the flavors.
+    - For extra richness, you can add a bit of grated cheese on top of the hot kebab before serving.
+    - When slicing the beef, make sure it is partially frozen; this makes slicing easier and helps to get nice thin cuts.
+    "
+
+**Recipe improvement suggestions**
+
+    "Your İskender Kebab preparation outline is strong and well-structured! For improvements, consider these suggestions:
+    1. **Marination**: Expand the marinade by adding spices like cumin and paprika for depth of flavor. Allow at least 2-4 hours to marinate for optimal taste.
+    2. **Sauce Depth**: When sautéing, deglaze with a splash of wine or broth after cooking the onions and garlic to capture all the flavors released.
+    3. **Potato Purée**: Warm the milk and butter before mixing for creaminess. A ricer will give you the smoothest texture.
+    4. **Serving**: Consider layering the potatoes and beef artfully for presentation. Adding a side of pickled veggies can enhance the dish's overall balance.
+    5. **Finish**: A sprinkle of sumac or paprika on top of the finished dish can add a pop of color and flavor.
+    Overall, it sounds delicious, and these tweaks may elevate it even further! Enjoy your cooking!"
+    
+
+
+
