@@ -15,10 +15,11 @@
 
 Building a RAG Pipeline with LlamaIndex
 1. Clone the LlamaIndex TypeScript Playground
+'''bash
 git clone https://github.com/run-llama/ts-playground.git
 cd ts-playground
-
-2. Install the dependencies
+'''
+3. Install the dependencies
 npm install
 npm install ai @ai-sdk/openai
 npm install ai openai
