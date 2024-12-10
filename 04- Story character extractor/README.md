@@ -15,26 +15,29 @@
 
 Building a RAG Pipeline with LlamaIndex
 1. Clone the LlamaIndex TypeScript Playground
-'''bash
+```bash
 git clone https://github.com/run-llama/ts-playground.git
 cd ts-playground
-'''
+```
 3. Install the dependencies
+```bash
 npm install
 npm install ai @ai-sdk/openai
 npm install ai openai
 Run `pnpm install` and `pnpm run dev`
-
+```
 Make sure to set your OpenAI key: `export OPENAI_API_KEY-="sk-..."`
 
 3. Update libraries
+```bash
 npm update rimraf
 npm update eslint
 npm update glob
-
+```
 4. Remove the vulnerabilities:
+```bash
 npm audit fix --force
-
+```
 5. Replace these files:
 index.tsx
 splitandembed.ts
@@ -42,8 +45,9 @@ retrieveandquery.ts
 package.json
 
 6. Run the project
+```bash
 npm run dev
-
+```
 7. Navigate to http://localhost:3000
 Click the 'Browse' button, enter your .txt file.
 Click the 'Get Character Information' button and wait until you get an answer.
