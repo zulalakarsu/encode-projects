@@ -55,47 +55,76 @@ Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and
 
 Follow these steps to clone and run the project locally:
 
-1. Open a terminal and navigate to your desired directory.
-
-2. Clone the repository using the following command:
+1. **Create a new Next.js project**:  
+   Run the following commands in your terminal:
 
    ```bash
-   git clone https://github.com/zulalakarsu/encode-projects.git
+   npx create-next-app travel-pack-ai
+   cd travel-pack-ai
    ```
 
-3. Navigate to the project folder:
+2. **Install Required Dependencies**:  
+   Install the necessary packages for both frontend and backend functionality:
 
    ```bash
-   cd encode-projects/FINAL_Travel_Packer
-   ```
+   # Frontend dependencies
+   npm install ai openai
+   npm install @ai-sdk/openai
+   npm install @radix-ui/react-label @radix-ui/react-slot class-variance-authority clsx tailwind-merge lucide-react
+   npm install tailwindcss postcss autoprefixer
 
-4. Install the frontend dependencies:
-
-   ```bash
-   npm install
-   ```
-
-5. Navigate to the `backend` folder and set up the backend:
-
-   ```bash
-   cd backend
+   # Backend dependencies (Python)
    pip install fastapi uvicorn transformers torch pillow
    ```
 
-6. Run the **backend server**:
+3. **Replace Files with Provided Code**:  
+   - Download the code from the repository:  
+     ```bash
+     git clone https://github.com/zulalakarsu/encode-projects.git
+     ```
+
+   - Copy the files from `FINAL_Travel_Packer` into your project:  
+     - Replace the following directories and files in your **Next.js project**:
+       ```plaintext
+       - app/api/
+       - app/components/
+       - app/utils/
+       - backend/
+       - globals.css
+       - layout.tsx
+       - page.tsx
+       ```
+
+   - Ensure all required files are moved into their respective folders.
+
+4. **Set Up Environment Variables**:  
+   Create a `.env.local` file in the root of your project and add the following keys:
+
+   ```env
+   OPENAI_API_KEY=sk-proj-xxxxx
+   WEATHER_API_KEY=xxxxx
+   HUGGINGFACE_TOKEN=hf_xxxxx
+   ```
+
+   Replace `xxxxx` with your actual API keys.
+
+5. **Run the Backend Server**:  
+   Navigate to the `backend` folder and start the FastAPI server:
 
    ```bash
+   cd backend
    uvicorn object_detection:app --reload --port 8000
    ```
 
-7. In a new terminal, navigate back to the project root folder and start the frontend:
+6. **Run the Frontend**:  
+   In a new terminal, start the Next.js development server:
 
    ```bash
-   cd ..
    npm run dev
    ```
 
-8. Open [http://localhost:3000](http://localhost:3000) in your browser to access the application.
+7. **Access the Application**:  
+   Open [http://localhost:3000](http://localhost:3000) in your browser to test the app.
 
 ---
 
