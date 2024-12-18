@@ -29,6 +29,20 @@ detector = pipeline(
     task="zero-shot-object-detection"
 )
 
+
+@app.get("/")
+async def root():
+    """Root endpoint to check API status"""
+    return {
+        "status": "ok",
+        "message": "Object Detection API is running",
+        "endpoints": {
+            "/": "This help message",
+            "/detect": "POST endpoint for object detection"
+        }
+    }
+
+
 @app.post("/detect")
 async def detect_objects(request: Request):
     try:
