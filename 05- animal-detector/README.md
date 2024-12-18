@@ -5,11 +5,44 @@ This project provides a **full-stack application** for classifying animals in im
 ---
 
 ## **Table of Contents**
-1. [Setup Instructions](#setup-instructions)  
-2. [Project Structure](#project-structure)  
-3. [Run the Project](#run-the-project)  
-4. [API Endpoints](#api-endpoints)  
-5. [Testing the Application](#testing-the-application)  
+1. [Setup Instructions](#setup-instructions)
+2. [Project Overview](#project-overview)
+3. [Project Structure](#project-structure)  
+4. [Run the Project](#run-the-project)  
+5. [API Endpoints](#api-endpoints)  
+6. [Testing the Application](#testing-the-application)  
+
+---
+
+## **Project Overview**
+
+The **Animal Classification API** is a full-stack application that detects and classifies animals in uploaded images using machine learning. It integrates a Python backend for computer vision tasks and a Next.js frontend for user interaction.
+
+---
+
+### **Key Features**
+1. **Image Upload**:  
+   Users can upload images through a simple interface.  
+
+2. **Animal Detection**:  
+   The backend processes the uploaded image to detect animals using a machine learning model.
+
+3. **Classification**:  
+   The API identifies the animal in the image and returns its name.  
+
+4. **Danger Assessment** 
+   Retrieve information about the animal (e.g., if it is dangerous) using web searches or Wikipedia.  
+
+5. **User-Friendly UI**:  
+   The frontend features clean components for seamless interaction.
+
+---
+
+### **Tech Stack**
+- **Frontend**: Next.js, React  
+- **Backend**: Python (FastAPI)  
+- **Machine Learning**: Hugging Face CLIP (or custom ML model)  
+- **API Integration**: TypeScript and Express  
 
 ---
 
