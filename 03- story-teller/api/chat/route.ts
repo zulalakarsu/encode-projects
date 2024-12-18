@@ -2,45 +2,50 @@ import { OpenAI } from 'openai';
 import { NextResponse } from 'next/server';
 
 // Initialize OpenAI client outside the handler to reuse the instance
+// const openai = new OpenAI({
+//   apiKey: process.env.OPENAI_API_KEY,
+// });
+
+// // Replace theOpenAI API with text generation webui server baseurl 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  baseURL: `http://127.0.0.1:5000/v1`,
 });
+
+// export const runtime = "edge";
 
 // Add response caching
 let responseCache = new Map();
+
+// debug
+// console.log('Using OpenAI API Key:', process.env.OPENAI_API_KEY);
 
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
     
-    // Create a cache key from the last message
-    const lastMessage = messages[messages.length - 1];
-    const cacheKey = JSON.stringify(lastMessage);
-
-    // Check cache first
-    if (responseCache.has(cacheKey)) {
-      return NextResponse.json(responseCache.get(cacheKey));
-    }
-
     const response = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",  // Changed to a faster model
+      model: "gpt-4o-mini",
+      // prompt: "You are a professional storyteller who has been hired to write a series of short stories in ${genre} and with  ${tone.toLowerCase()} in tone.",
       messages: messages,
       temperature: 0.7,
       max_tokens: 1000,
-      timeout: 60000, // 60 second timeout
     });
 
     const result = response.choices[0].message;
 
     // Cache the response
-    responseCache.set(cacheKey, result);
+    responseCache.set(JSON.stringify(messages), result);
 
     return NextResponse.json(result);
 
   } catch (error) {
     console.error('Error in chat API:', error);
+    // Log the error details
+    if (error.response) {
+      console.error('OpenAI API response:', error.response);
+    }
     return NextResponse.json(
-      { error: 'Failed to generate response' },
+      { error: error.message || 'Failed to generate response' },
       { status: 500 }
     );
   }
