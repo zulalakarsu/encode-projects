@@ -1,107 +1,186 @@
-# Story-Teller App: Building Our First Local AI Application  
+# Story-Teller App Using Text Generation WebUI  
 
 ## Overview  
 
-This project aims to **build a local AI-powered story generation application** using Next.js. It allows users to create and manage custom characters and generate stories where these characters play a central role. Additionally, the project explores AI model performance in terms of memory retention, context window impact, and output quality.  
+This project is a **Next.js** application designed for dynamic **story generation** using user-created characters and integrating AI models via the **Text Generation WebUI API**. The app allows users to manage characters, customize story parameters, and evaluate outputs from various AI models locally.
+
+---
+
+## Table of Contents  
+- [Prerequisites](#prerequisites)  
+- [Installation](#installation)  
+- [Running the Application](#running-the-application)  
+- [Features](#features)  
+- [Usage](#usage)  
+- [Error Handling](#error-handling)  
+
+---
+
+## Prerequisites  
+
+Before you begin, ensure you have the following:  
+- Basic knowledge of **bash commands** (Linux/Mac) or **Command Prompt** (Windows).  
+- **Node.js** and **npm** installed on your machine.  
+- An OpenAI API Key.  
+- **Text Generation WebUI** installed and running.  
+
+---
+
+## Installation  
+
+### Step 1: Set Up the Project  
+
+1. Create a new project directory:  
+   ```bash
+   mkdir my-projects  
+   cd my-projects  
+   ```
+
+2. Create a new Next.js application:  
+   ```bash
+   npx create-next-app@latest story-telling-app  
+   cd story-telling-app  
+   ```
+
+3. Accept all default options during setup.  
+
+---
+
+### Step 2: Install Dependencies  
+
+1. Update dependencies to fix warnings:  
+   ```bash
+   npm update eslint  
+   npm update rimraf  
+   npm update glob  
+   ```
+
+2. Install required libraries:  
+   ```bash
+   npm install ai @ai-sdk/openai  
+   npm install lucide-react  
+   ```
+
+3. Set up your OpenAI API Key:  
+   - Create a `.env.local` file in the root directory:  
+     ```bash
+     touch .env.local  
+     ```
+   - Add your OpenAI API key:  
+     ```bash
+     OPENAI_API_KEY=your_openai_api_key_here  
+     ```
+
+---
+
+### Step 3: Integrate Project Files  
+
+Replace the default Next.js files with the project components:  
+
+1. **Replace `page.tsx`**:  
+   - Download the provided `page.tsx` from the GitHub repository and place it in `app/page.tsx`.  
+
+2. **Create API Routes**:  
+   - Navigate to the `app` folder and create the following structure:  
+     ```
+     app/
+     └── api/
+         └── chat/
+             └── route.ts
+     ```  
+   - Add the provided `route.ts` file in the `chat` directory.  
+
+3. **Optional**: Replace the `global.css` file to include additional UI styling.  
+
+---
+
+## Running the Application  
+
+### 1. Run the Text Generation WebUI  
+
+- Start the **Text Generation WebUI** with the API server enabled.  
+- Open your browser and navigate to:  
+  ```bash
+  http://127.0.0.1:7860  
+  ```
+- Confirm that the API server is accepting requests and a model is loaded in the **Model Tab**.  
+- Verify the following in the **Session Tab**:  
+  - **API** is selected.  
+  - **OpenAI** is enabled.  
+
+### 2. Run Your Local API  
+
+Ensure your API endpoint is active on port **5000** (or another specified port).  
+
+### 3. Start the Next.js App  
+
+Run the development server:  
+```bash
+npm run dev  
+```
+
+Navigate to:  
+```bash
+http://localhost:3000  
+```
 
 ---
 
 ## Features  
 
-1. **Character Management**  
-   - Users can create, edit, and delete characters.  
-   - Each character includes:  
-     - **Name**  
-     - **Description**  
-     - **Personality**  
+### **Character Management**  
+- Create, edit, and delete characters.  
+- Define attributes such as:  
+  - **Name**  
+  - **Description**  
+  - **Personality**  
 
-2. **Custom Story Generation**  
-   - Generates engaging stories incorporating user-created characters.  
-   - Prompts are customized to ensure characters' traits are part of the story.
+### **Custom Story Generation**  
+- Generate AI-powered stories with user-created characters.  
+- Customize the following parameters:  
+  - **Genre**: Fantasy, Mystery, Romance, Sci-Fi  
+  - **Tone**: Happy, Sad, Sarcastic, Funny  
 
-3. **Character Role Summary**  
-   - Summarizes each character's role and contribution to the generated story.  
+### **Dynamic Summaries**  
+- After the story is generated, view a summary of each character's role and contribution.
 
-4. **Model Experimentation**  
-   - Compare outputs from different models.  
-   - Evaluate:  
-     - Memory retention of user-defined characters.  
-     - Impact of context window sizes.  
-     - Performance of varying model sizes (e.g., TinyLlama for small devices).  
+### **Real-Time Text Generation**  
+- Integrate and test AI models using **Text Generation WebUI**.  
+- Stream-based story delivery for better real-time performance.  
 
-5. **Local AI Application**  
-   - The app is designed to run locally, showcasing the process of **Building Our First Local AI Application**.
-
----
-
-## Setup Instructions  
-
-### 1. Clone the Repository  
-```bash
-git clone https://github.com/zulalakarsu/encode-projects.git
-cd encode-projects/03- story-teller
-```
-
-### 2. Update Base URL for Local API  
-Edit the `route.ts` file to point to your local API port:  
-```javascript
-export const BASE_URL = "http://localhost:<your-port-number>";
-```
-
-### 3. Run Local API  
-Ensure your API backend is running on the configured port.  
-
-### 4. Install Dependencies  
-```bash
-npm install
-npm install ai @ai-sdk/openai
-```
-
-### 5. Start the Project Locally  
-```bash
-npm run dev
-```
-
-Access the app at:  
-```bash
-http://localhost:3000
-```
+### **Model Experimentation**  
+- Test different AI models (e.g., **TinyLlama**).  
+- Evaluate context window sizes and model memory retention.  
 
 ---
 
-## How It Works  
+## Usage  
 
-1. **Create Characters**:  
-   Use the table interface to add characters with names, descriptions, and personalities.  
+### 1. Add Characters  
+- Click the "Add Character" button.  
+- Enter the character’s name, description, and personality.  
 
-2. **Generate Stories**:  
-   Click **"Generate Story"** to create a story that integrates your custom characters.  
+### 2. Edit/Delete Characters  
+- Edit: Click the **pencil icon**.  
+- Delete: Click the **trash icon**.  
 
-3. **Character Role Summary**:  
-   After the story is generated, view each character's role in the story.  
+### 3. Customize Story Parameters  
+- Select a genre and tone for the story.  
 
-4. **Experiment with Models**:  
-   - Test various AI models for story generation.  
-   - Adjust **context window sizes** to observe changes in model output and memory.  
-   - Compare outputs between small and large models (e.g., **TinyLlama_TinyLlama-1.1B-Chat-v1.0**).  
+### 4. Generate a Story  
+- Click the **"Generate Story"** button.  
+- Wait for the AI model to generate the story with your custom characters.  
+
+### 5. View Results  
+- Review the generated story and summaries of the characters' roles.  
 
 ---
 
-## Key Experimentation Areas  
+## Final Steps  
 
-1. **AI Model Testing**:  
-   Evaluate performance of multiple models to:  
-   - Compare story generation quality.  
-   - Analyze memory retention of user-defined characters.  
-
-2. **Context Window Impact**:  
-   Experiment with different context window sizes to observe how input length affects generated output.  
-
-3. **Model Size Comparison**:  
-   Test smaller models like **TinyLlama** for resource-constrained environments and compare them to larger models.  
-
-4. **Local Deployment**:  
-   Successfully run and test an AI-powered app locally, focusing on experimentation over overall story quality.  
+1. Test the application to ensure it works as expected.  
+2. Experiment with different models in the Text Generation WebUI.  
+3. Enjoy creating custom stories powered by AI!  
 
 ---
 
@@ -110,4 +189,3 @@ http://localhost:3000
 The primary aim of this project is to **build and test a local AI application** that combines character management and story generation while allowing experimentation with model outputs and parameters.  
 
 
----
