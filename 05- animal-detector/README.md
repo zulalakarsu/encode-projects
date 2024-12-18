@@ -16,11 +16,6 @@ This project provides a **full-stack application** for classifying animals in im
 
 ## **Project Overview**
 
-The **Animal Classification API** is a full-stack application that detects and classifies animals in uploaded images using machine learning. It integrates a Python backend for computer vision tasks and a Next.js frontend for user interaction.
-
----
-
-### **Key Features**
 1. **Image Upload**:  
    Users can upload images through a simple interface.  
 
