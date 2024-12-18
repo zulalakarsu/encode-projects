@@ -21,6 +21,7 @@ An AI-powered travel packing assistant that helps you plan and organize your tri
 7. [Building the Application](#building-the-application)
 8. [Project Structure](#project-structure)
 9. [API Integration](#api-integration)
+10. [Deployment](#deployment)
 
 ---
 
@@ -298,5 +299,55 @@ app/
      - Accepts a **base64-encoded image** and a **packing list**.  
      - Returns detected items, matched items, missing items, and an annotated image.
 
+---
 
+### **Deployment**
+
+#### **Render Deployment**
+
+1. **Backend (API Server)**:
+   - I deployed the backend using **Render** to serve the object detection and packing list generation functionality.
+   - The backend uses:
+     - **FastAPI**: Python framework for handling API requests.
+     - **HuggingFace Transformers**: For object detection with the OWLv2 model.
+     - The `requirements.txt` file is used to install dependencies.
+
+2. **Deployment Steps**:
+   - Uploaded the backend folder to a repository.
+   - Configured Render to deploy from the backend directory.
+   - Render automatically detected the Python environment and installed required dependencies.
+   - The server was launched successfully, and the API endpoints are now live.
+
+3. **API Endpoints**:
+   - `/detect`: Verifies packed items from an uploaded image.
+   - Example POST requests can be made using tools like **curl** or Postman.
+
+4. **Status**:
+   - ✅ Successfully deployed and functional on Render.
+
+---
+
+#### **Vercel Deployment**
+
+1. **Frontend and API Deployment**:
+   - Deployed the frontend (Next.js app) and API routes on **Vercel**.
+   - Vercel serves the frontend and runs serverless functions for the API endpoints.
+
+2. **Timeout Limitation**:
+   - The `/api/generate-packing-list` endpoint, which generates packing lists using the OpenAI API and fetches weather details, exceeds the **10-second execution time limit** on Vercel's **free plan**.
+   - As a result, the deployment on Vercel does not fully function for generating the packing list.
+
+3. **Steps Taken**:
+   - Frontend deployed successfully.
+   - The weather API fetches data correctly.
+   - Timeout occurs when generating the packing list due to processing time.
+
+4. **Next Steps**:
+   - Optimize the serverless function to reduce response time.
+   - Upgrade to Vercel's Pro plan to increase the timeout limit.
+
+#### **Temporary Solution**
+
+For now, the backend API is fully functional on Render. To test the app end-to-end:
+- Use the Render backend endpoint in the frontend code.
 
