@@ -45,6 +45,10 @@ Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and
 3. Upload an image of your packed items to verify completeness.
 4. Use the interactive checklist to ensure everything is ready for your trip.
 
+### **Demo**
+
+<img width="553" alt="demo" src="https://github.com/user-attachments/assets/7435a6ee-c9e3-4f19-a86f-a06c59b9429f" />
+
 ---
 
 ## **Tech Stack**
