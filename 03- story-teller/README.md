@@ -1,41 +1,113 @@
-AI Story Telling app 
-This web application generates short stories based on custom characters, genres, and tones. Built with React and NextJS
-You can also generate the audio and listen to the generated story. 
+# Story-Teller App: Building Our First Local AI Application  
 
-Genres:
- Fantasy
- Mystery
- Romance
+## Overview  
 
-Tones
- Happy
- Informative
- Funny
- 
- AgeGroups = [
-  { value: "3-5", label: "Preschool (3-5)", emoji: "🎠", color: "bg-orange-500" },
-  { value: "6-8", label: "Early Reader (6-8)", emoji: "🌟", color: "bg-yellow-500" },
-  { value: "9-12", label: "Middle Grade (9-12)", emoji: "🚀", color: "bg-indigo-500" },
+This project aims to **build a local AI-powered story generation application** using Next.js. It allows users to create and manage custom characters and generate stories where these characters play a central role. Additionally, the project explores AI model performance in terms of memory retention, context window impact, and output quality.  
 
+---
 
-Installation
-1. Open terminal 
-2. Create a new folder 
-3. Create a new NextJS project using the following command:
+## Features  
 
-npx create-next-app@latest story-telling-app
+1. **Character Management**  
+   - Users can create, edit, and delete characters.  
+   - Each character includes:  
+     - **Name**  
+     - **Description**  
+     - **Personality**  
 
-4. Open the new folder
+2. **Custom Story Generation**  
+   - Generates engaging stories incorporating user-created characters.  
+   - Prompts are customized to ensure characters' traits are part of the story.
 
-5. Install dependencies 
+3. **Character Role Summary**  
+   - Summarizes each character's role and contribution to the generated story.  
 
+4. **Model Experimentation**  
+   - Compare outputs from different models.  
+   - Evaluate:  
+     - Memory retention of user-defined characters.  
+     - Impact of context window sizes.  
+     - Performance of varying model sizes (e.g., TinyLlama for small devices).  
+
+5. **Local AI Application**  
+   - The app is designed to run locally, showcasing the process of **Building Our First Local AI Application**.
+
+---
+
+## Setup Instructions  
+
+### 1. Clone the Repository  
+```bash
+git clone https://github.com/zulalakarsu/encode-projects.git
+cd encode-projects/03- story-teller
+```
+
+### 2. Update Base URL for Local API  
+Edit the `route.ts` file to point to your local API port:  
+```javascript
+export const BASE_URL = "http://localhost:<your-port-number>";
+```
+
+### 3. Run Local API  
+Ensure your API backend is running on the configured port.  
+
+### 4. Install Dependencies  
+```bash
+npm install
 npm install ai @ai-sdk/openai
-npm install ai openai
-Note: Add your OPEN API KEY to a local envirnoment or .env.local file in the root of the project
+```
 
-6. Start the development server:
+### 5. Start the Project Locally  
+```bash
 npm run dev
+```
 
-7. Navigate to http://localhost:3000 
+Access the app at:  
+```bash
+http://localhost:3000
+```
+
+---
+
+## How It Works  
+
+1. **Create Characters**:  
+   Use the table interface to add characters with names, descriptions, and personalities.  
+
+2. **Generate Stories**:  
+   Click **"Generate Story"** to create a story that integrates your custom characters.  
+
+3. **Character Role Summary**:  
+   After the story is generated, view each character's role in the story.  
+
+4. **Experiment with Models**:  
+   - Test various AI models for story generation.  
+   - Adjust **context window sizes** to observe changes in model output and memory.  
+   - Compare outputs between small and large models (e.g., **TinyLlama_TinyLlama-1.1B-Chat-v1.0**).  
+
+---
+
+## Key Experimentation Areas  
+
+1. **AI Model Testing**:  
+   Evaluate performance of multiple models to:  
+   - Compare story generation quality.  
+   - Analyze memory retention of user-defined characters.  
+
+2. **Context Window Impact**:  
+   Experiment with different context window sizes to observe how input length affects generated output.  
+
+3. **Model Size Comparison**:  
+   Test smaller models like **TinyLlama** for resource-constrained environments and compare them to larger models.  
+
+4. **Local Deployment**:  
+   Successfully run and test an AI-powered app locally, focusing on experimentation over overall story quality.  
+
+---
+
+## Aim  
+
+The primary aim of this project is to **build and test a local AI application** that combines character management and story generation while allowing experimentation with model outputs and parameters.  
 
 
+---
