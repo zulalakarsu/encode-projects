@@ -4,6 +4,8 @@
 
 The **AI Travel Packing List Assistant** is a smart tool designed to simplify travel preparation. It generates a tailored packing list based on user-provided trip details and checks packed items using AI-powered image analysis. Whether you're planning a short getaway or an extended trip, this assistant ensures you don't miss any essentials.
 
+Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and object detection. It generates personalized packing lists based on weather conditions and allows image uploads to verify packed items against the list.
+
 ---
 
 ## **Table of Contents**
@@ -19,11 +21,6 @@ The **AI Travel Packing List Assistant** is a smart tool designed to simplify tr
 9. [API Integration](#api-integration)
 10. [Deployment](#deployment)
 
----
-
-## **About the Project**
-
-Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and object detection. It generates personalized packing lists based on weather conditions and allows image uploads to verify packed items against the list.
 
 ---
 
