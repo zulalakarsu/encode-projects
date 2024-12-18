@@ -16,6 +16,8 @@ This project provides a **full-stack application** for classifying animals in im
 
 ## **Project Overview**
 
+The project allows users to upload images, where the backend detects and classifies animals using a machine learning model, retrieves additional information like danger levels via web searches, and presents results through a clean, user-friendly interface.
+
 1. **Image Upload**:  
    Users can upload images through a simple interface.  
 
