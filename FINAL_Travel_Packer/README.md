@@ -14,13 +14,13 @@ An AI-powered travel packing assistant that helps you plan and organize your tri
 
 1. [About the Project](#about-the-project)  
 2. [Features](#features)
-3. [Usage](#usage)  
-3. [Tech Stack](#tech-stack)  
-4. [Getting Started](#getting-started)  
-5. [Building the Application](#building-the-application)  
-6. [Project Structure](#project-structure)  
-7. [API Integration](#api-integration)  
-8. [License](#license)  
+3. [Usage](#usage)
+4. [How to Clone This Project](#how-to-clone-this-project)
+5. [Tech Stack](#tech-stack)
+6. [Getting Started](#getting-started)
+7. [Building the Application](#building-the-application)
+8. [Project Structure](#project-structure)
+9. [API Integration](#api-integration)
 
 ---
 
@@ -48,6 +48,54 @@ Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and
 ### **Demo**
 
 <img width="553" alt="demo" src="https://github.com/user-attachments/assets/7435a6ee-c9e3-4f19-a86f-a06c59b9429f" />
+
+---
+
+## **How to Clone This Project**
+
+Follow these steps to clone and run the project locally:
+
+1. Open a terminal and navigate to your desired directory.
+
+2. Clone the repository using the following command:
+
+   ```bash
+   git clone https://github.com/zulalakarsu/encode-projects.git
+   ```
+
+3. Navigate to the project folder:
+
+   ```bash
+   cd encode-projects/FINAL_Travel_Packer
+   ```
+
+4. Install the frontend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+5. Navigate to the `backend` folder and set up the backend:
+
+   ```bash
+   cd backend
+   pip install fastapi uvicorn transformers torch pillow
+   ```
+
+6. Run the **backend server**:
+
+   ```bash
+   uvicorn object_detection:app --reload --port 8000
+   ```
+
+7. In a new terminal, navigate back to the project root folder and start the frontend:
+
+   ```bash
+   cd ..
+   npm run dev
+   ```
+
+8. Open [http://localhost:3000](http://localhost:3000) in your browser to access the application.
 
 ---
 
