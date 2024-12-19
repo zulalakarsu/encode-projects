@@ -1,4 +1,4 @@
-# **Travel Pack AI 🌨️🧳📸🤖 **
+# Travel Pack AI 🌨️🧳📸🤖 
 
 ## **About the Project**
 
