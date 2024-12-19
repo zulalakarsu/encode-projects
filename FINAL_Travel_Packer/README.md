@@ -215,6 +215,7 @@ app/
 │
 │── backend/
 │   ├── object_detection.py
+│   └── requirements.txt
 │
 │── components/
 │   ├── ImageUpload.tsx
