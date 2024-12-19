@@ -2,9 +2,9 @@
 
 ## **About the Project**
 
-The **AI Travel Packing List Assistant** is a smart tool designed to simplify travel preparation. It generates a tailored packing list based on user-provided trip details and checks packed items using AI-powered image analysis. Whether you're planning a short getaway or an extended trip, this assistant ensures you don't miss any essentials.
+The **AI Travel Packing List Assistant** is a smart tool designed to simplify travel preparation. 
 
-Travel Pack AI simplifies trip packing using AI models like **OpenAI GPT-4** and object detection. It generates personalized packing lists based on weather conditions and allows image uploads to verify packed items against the list.
+Packing can be stressful, with forgotten essentials or overpacking as common issues. Travel Pack AI eliminates this hassle by creating personalized packing lists based on your trip details such as the duration, weather and activities, and verifying your packed items using AI-powered image analysis. It uses AI models like **OpenAI GPT-4** for text generation and **Google OWLv2** for object detection. This is a new way to make travel preparation efficient and fun.  
 
 ---
 
@@ -185,8 +185,10 @@ Follow these steps to clone and run the project locally:
    cd backend
    ```
 
-2. Install Python dependencies:
+2. Install Python dependencies on a virtual environment:
    ```bash
+   python -m venv venv
+   source venv/bin/activate  # Activate the virtual environment
    pip install fastapi uvicorn transformers torch pillow
    ```
 
@@ -245,7 +247,7 @@ app/
    - Get your API key from [OpenAI](https://platform.openai.com/).
 
 3. **Object Detection (Python Backend)**:  
-   - The backend uses HuggingFace OWLv2 to perform zero-shot object detection.  
+   - The backend uses HuggingFace transormers and OWLv2 model to perform zero-shot object detection.  
 
 4. Add the API keys to **`.env.local`**:
    ```env
