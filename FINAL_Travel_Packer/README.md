@@ -139,7 +139,7 @@ Follow these steps to clone and run the project locally:
 - **OpenAI** for text generation  
 
 **Hosting**: 
-- **Vercel** for deployment.
+- **Vercel** and **Render** for deployment.
 
 ---
 
