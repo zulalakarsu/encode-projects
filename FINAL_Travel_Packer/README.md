@@ -43,6 +43,8 @@ Packing can be stressful, with forgotten essentials or overpacking as common iss
 
 <img width="553" alt="demo" src="https://github.com/user-attachments/assets/7435a6ee-c9e3-4f19-a86f-a06c59b9429f" />
 
+<img width="617" alt="Screenshot 2024-12-19 at 11 44 58" src="https://github.com/user-attachments/assets/36b72bc0-47eb-4cc8-ac15-0bde530e6d9d" />
+
 ---
 
 ## **How to Clone This Project**
